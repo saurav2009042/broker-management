@@ -1,0 +1,40 @@
+.sidebar {
+    background-color: #333333;
+    padding-top: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaaaaa;
+    margin-right: 0.5rem;
+}
+
+.menu-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.selected {
+    background-color: #4b545b;
+}

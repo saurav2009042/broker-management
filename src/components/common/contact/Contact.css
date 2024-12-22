@@ -1,0 +1,47 @@
+.contact-wrapper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.contact-label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #757575;
+}
+
+.select-bar {
+    height: 56px;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #cbcbcb;
+    border-radius: 4px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.select-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 40px;
+}
+
+.contact-caret-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #757575;
+}
+
+.contact-email {
+    font-style: italic;
+    color: #757575;
+}

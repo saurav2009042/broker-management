@@ -1,0 +1,81 @@
+.app-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0 1rem;
+    background-color: #26bad4;
+    color: white;
+}
+
+.appbar-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.appbar-title-logo {
+    height: 32px;
+    margin-right: 0.5rem;
+}
+
+.appbar-title-text {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.appbar-search-bar-container {
+    display: flex;
+    align-items: center;
+    background-color: #46c4da;
+    border-radius: 4px;
+    width: 200px;
+    height: 36px;
+    color: #ffffff;
+}
+
+.appbar-search-bar {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+}
+
+.appbar-search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    margin-left: 8px;
+    background-color: #46c4da;
+    color: #ffffff;
+}
+
+.appbar-search-bar input::placeholder {
+    color: #ffffff;
+}
+
+.appbar-search-icon {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.appbar-icon-buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+.appbar-icon-button {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.appbar-icon-button svg {
+    width: 24px;
+    height: 24px;
+}

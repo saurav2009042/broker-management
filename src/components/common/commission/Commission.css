@@ -1,0 +1,35 @@
+.commission-wrapper {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.commission-label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #757575;
+}
+
+.commission-input {
+    height: 56px;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #cbcbcb;
+    border-radius: 4px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.percentage {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #757575;
+    pointer-events: none;
+}
