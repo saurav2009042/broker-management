@@ -8,27 +8,27 @@
     color: white;
 }
 
-.appbar-title-container {
+.app-bar__title-container {
     display: flex;
     align-items: center;
 }
 
-.appbar-title-logo {
+.app-bar__title-logo {
     height: 32px;
     margin-right: 0.5rem;
 }
 
-.appbar-title-text {
+.app-bar__title-text {
     font-size: 10px;
     font-weight: 400;
 }
 
-.right-section {
+.app-bar__right-section {
     display: flex;
     align-items: center;
 }
 
-.appbar-search-bar-container {
+.app-bar__search-bar-container {
     display: flex;
     align-items: center;
     background-color: #46c4da;
@@ -38,13 +38,13 @@
     color: #ffffff;
 }
 
-.appbar-search-bar {
+.app-bar__search-bar {
     display: flex;
     align-items: center;
     padding: 6px 16px;
 }
 
-.appbar-search-bar input {
+.app-bar__search-bar input {
     border: none;
     outline: none;
     flex-grow: 1;
@@ -53,20 +53,20 @@
     color: #ffffff;
 }
 
-.appbar-search-bar input::placeholder {
+.app-bar__search-bar input::placeholder {
     color: #ffffff;
 }
 
-.appbar-search-icon {
+.app-bar__search-icon {
     color: rgba(255, 255, 255, 0.85);
 }
 
-.appbar-icon-buttons-container {
+.app-bar__icon-buttons-container {
     display: flex;
     align-items: center;
 }
 
-.appbar-icon-button {
+.app-bar__icon-button {
     width: 48px;
     height: 48px;
     display: flex;
@@ -75,7 +75,7 @@
     cursor: pointer;
 }
 
-.appbar-icon-button svg {
+.app-bar__icon-button svg {
     width: 24px;
     height: 24px;
 }

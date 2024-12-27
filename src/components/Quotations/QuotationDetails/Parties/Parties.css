@@ -1,0 +1,84 @@
+.tab-content {
+    padding-top: 20px;
+}
+
+.parties {
+    display: flex;
+    flex-direction: column;
+}
+
+.parties__card {
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.parties-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.parties-card__card-header {
+    padding: 16px;
+}
+
+.parties-card__header {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    color: #212121;
+    line-height: 32px;
+}
+
+.parties-card__sub-header {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    color: #666666;
+    line-height: 20px;
+}
+
+.parties-card__card-content {
+    padding: 16px 16px 0 16px;
+}
+
+.parties-card__details-container {
+    margin-top: 16px;
+}
+
+.parties-card__detail {
+    height: 44px;
+}
+
+.parties-card__label {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    color: #757575;
+    height: 20px;
+    line-height: 20px;
+}
+
+.parties-card__value {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    color: #000000;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 4px;
+}
+
+/* Specific Styles for Introducing Broker */
+.introducing-broker__detail {
+    margin-bottom: 12px;
+}
+
+/* Specific Styles for Joint Insured */
+.joint-insured__detail {
+    margin-bottom: 16px;
+}

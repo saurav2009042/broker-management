@@ -1,8 +1,7 @@
 import { IBreadcrumbs } from './breadcrumbs.interface';
 
-export interface IQuotationHeader {
+export interface IQuotationHeaderProps {
     breadcrumbs: IBreadcrumbs;
     title: string;
-    buttonText: string;
     onButtonClick: () => void;
 }

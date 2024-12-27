@@ -1,15 +1,16 @@
 .sidebar {
     background-color: #333333;
     padding-top: 30px;
+    margin-top: 4px;
 }
 
-.sidebar ul {
+.sidebar__list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.sidebar li {
+.sidebar__item {
     display: flex;
     align-items: center;
     height: 48px;
@@ -21,7 +22,7 @@
     cursor: pointer;
 }
 
-.menu-icon {
+.sidebar__icon {
     width: 56px;
     display: flex;
     align-items: center;
@@ -30,11 +31,11 @@
     margin-right: 0.5rem;
 }
 
-.menu-icon svg {
+.sidebar__icon svg {
     width: 24px;
     height: 24px;
 }
 
-.selected {
+.sidebar__item--selected {
     background-color: #4b545b;
 }

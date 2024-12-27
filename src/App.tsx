@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import AppBar from './components/app-bar/AppBar';
-import AuditLog from './components/audit-log/AuditLog';
-import Dashboard from './components/dashboard/Dashboard';
-import Policies from './components/policies/Policies';
-import Quotation from './components/quotation/Quotation';
-import Sidebar from './components/sidebar/Sidebar';
-import Submissions from './components/submissions/Submissions';
+import { AppBar, AuditLog, Dashboard, Policies, QuotationDetails, Sidebar, Submissions } from './components';
 import { ESidebarOptions } from './enums';
 
 const App: React.FC = () => {
@@ -23,22 +17,22 @@ const App: React.FC = () => {
             case 'submissions':
                 return <Submissions />;
             case 'quotations':
-                return <Quotation />;
+                return <QuotationDetails />;
             case 'policies':
                 return <Policies />;
             case 'audit':
                 return <AuditLog />;
             default:
-                return <Quotation />;
+                return <QuotationDetails />;
         }
     };
 
     return (
         <div className='app'>
             <AppBar />
-            <div className='main-content'>
+            <div className='app__main-content'>
                 <Sidebar onItemClick={handleItemClick} />
-                <div className='content'>{renderPage()}</div>
+                <div className='app__content'>{renderPage()}</div>
             </div>
         </div>
     );

@@ -13,29 +13,15 @@
     padding: 0 16px;
 }
 
-.main-content {
+.app__main-content {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 20% 80%;
     height: 100%;
 }
 
-.sidebar {
-    margin-top: 4px;
-    background-color: #f0f0f0;
-    height: 100%;
-}
-
-.content {
+.app__content {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-.quotation-detail-wrapper {
-    width: 60%;
-}
-
-.overview-submission-wrapper {
-    width: 20%;
 }

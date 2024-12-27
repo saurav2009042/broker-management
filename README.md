@@ -39,6 +39,39 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## How to Test?
+
+When you launch the application using npm start, you will be redirected to the Parties tab of a particular quotation. Here, in the Managing Broker section, you can type in a name in the Name field. The available values are - 
+Harry Potter
+Hermoine Granger
+Ron Weasley
+Ginny Wealey, and
+Neville Longbottom.
+When user searches for any of the above values, the Name along with Address, City and Country are also shown. On selecting a particular name, its relevant details are populated in the fields from our mock data.
+The user will also have an option to choose a Contact for a selected Name.
+For Name Harry Potter, the available contacts are :
+Albus Dumbledore
+Severus Snape
+
+When user searches for a value and doesn't find it, he / she has the option to create a New Legal Entity.
+In order that the value input by user is not lost on clicking New Legal Entity, we populate it in our modal.
+The user can then either enter all the other details or just leave them blank.
+However, the name is required.
+The UI checks for 2 things - 
+1. The name is not left empty
+2. The exact same details already exist, in which case it would be useless to create a new entity.
+If either of above is being violated, the CREATE button stays disabled and a warning appears.
+The Address and City in modal combines to form Address in Managing Broker section.
+They are separated by a comma.
+However, the comma only appears if there is both an Address and a City.
+
+Normally, if we are creating a new entity, the contacts are fteched based on entity name.
+We have a mock data for that.
+On inputting Legal Name as New Legal Entity 1, there are 2 contacts associated with it -
+Sirius Black
+Luna Lovegood.
+By default, the 1st contact is selected in case of New Leagl Entity. 
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

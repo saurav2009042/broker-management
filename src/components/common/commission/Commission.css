@@ -1,9 +1,9 @@
-.commission-wrapper {
+.commission {
     position: relative;
     margin-bottom: 16px;
 }
 
-.commission-label {
+.commission__label {
     position: absolute;
     top: -10px;
     left: 10px;
@@ -12,9 +12,16 @@
     font-size: 12px;
     font-weight: 400;
     color: #757575;
+    z-index: 1;
 }
 
-.commission-input {
+.commission__input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.commission__input {
     height: 56px;
     width: 100%;
     padding: 8px;
@@ -25,7 +32,7 @@
     box-sizing: border-box;
 }
 
-.percentage {
+.commission__percentage {
     position: absolute;
     right: 10px;
     top: 50%;

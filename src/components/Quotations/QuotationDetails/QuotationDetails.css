@@ -1,0 +1,19 @@
+.quotation-details {
+    padding: 16px;
+}
+
+.quotation-details__content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.quotation-details__tabs {
+    flex: 3;
+    padding-right: 16px;
+}
+
+.quotation-details__overview {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}

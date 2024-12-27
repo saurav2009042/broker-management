@@ -6,25 +6,25 @@ import './AppBar.css';
 const AppBar: React.FC = () => {
     return (
         <header className='app-bar'>
-            <div className='appbar-title-container'>
-                <img src={tinubuLogo} alt='Tinubu Logo' className='appbar-title-logo' />
-                <span className='appbar-title-text'>Credit Solution Vanilla</span>
+            <div className='app-bar__title-container'>
+                <img src={tinubuLogo} alt='Tinubu Logo' className='app-bar__title-logo' />
+                <span className='app-bar__title-text'>Credit Solution Vanilla</span>
             </div>
-            <div className='right-section'>
-                <div className='appbar-search-bar-container'>
-                    <div className='appbar-search-bar'>
-                        <FaSearch className='appbar-search-icon' />
-                        <input id='appbar-search-bar' type='text' placeholder='Search...' />
+            <div className='app-bar__right-section'>
+                <div className='app-bar__search-bar-container'>
+                    <div className='app-bar__search-bar'>
+                        <FaSearch className='app-bar__search-icon' aria-label='Search' />
+                        <input id='app-bar__search-bar' type='text' placeholder='Search...' aria-label='Search input' />
                     </div>
                 </div>
-                <div className='appbar-icon-buttons-container'>
-                    <div className='appbar-icon-button'>
+                <div className='app-bar__icon-buttons-container'>
+                    <div className='app-bar__icon-button' aria-label='Favorites'>
                         <FaStar />
                     </div>
-                    <div className='appbar-icon-button'>
+                    <div className='app-bar__icon-button' aria-label='Notifications'>
                         <FaBell />
                     </div>
-                    <div className='appbar-icon-button'>
+                    <div className='app-bar__icon-button' aria-label='User Profile'>
                         <FaUser />
                     </div>
                 </div>

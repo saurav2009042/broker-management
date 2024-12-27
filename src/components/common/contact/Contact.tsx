@@ -6,30 +6,32 @@ import './Contact.css';
 
 const Contact: React.FC<IContactProps> = ({ value, availableContacts, onSelectContact }) => {
     return (
-        <div className='contact-wrapper' style={{ marginTop: '25px' }}>
-            <label htmlFor='contact' className='contact-label'>
+        <div className='contact'>
+            <label htmlFor='contact' className='contact__label'>
                 {EManagingBroker.CONTACT}
             </label>
-            <div className='select-wrapper'>
-                <select id='contact'
-                        className='select-bar'
-                        value={value ? `${value.name} <${value.email}>` : ''}
-                        onChange={(e) => {
-                            const selectedOption = availableContacts?.find(
-                                contact => `${contact.name} <${contact.email}>` === e.target.value
-                            );
+            <div className='contact__select-wrapper'>
+                <select 
+                    id='contact'
+                    className='contact__select-bar'
+                    aria-label='Select Contact'
+                    value={value ? `${value.name} <${value.email}>` : ''}
+                    onChange={(e) => {
+                        const selectedOption = availableContacts?.find(
+                            contact => `${contact.name} <${contact.email}>` === e.target.value
+                        );
 
-                            if (selectedOption) {
-                                onSelectContact(selectedOption);
-                            }
-                        }}>
+                        if (selectedOption) {
+                            onSelectContact(selectedOption);
+                        }
+                    }}>
                     {availableContacts?.map((contact, index) => (
                         <option key={index} value={`${contact.name} <${contact.email}>`}>
-                            {contact.name} (<span className='contact-email'>{contact.email}</span>)
+                            {contact.name} (<span className='contact__email'>{contact.email}</span>)
                         </option>
                     ))}
                 </select>
-                <FaCaretDown className='contact-caret-icon' />
+                <FaCaretDown className='contact__caret-icon' />
             </div>
         </div>
     );

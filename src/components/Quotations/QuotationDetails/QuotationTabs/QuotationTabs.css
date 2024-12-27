@@ -1,0 +1,29 @@
+.quotation-tabs {
+    padding: 0 16px;
+}
+
+.quotation-tabs__tab-nav {
+    display: flex;
+    border-bottom: none;
+}
+
+.quotation-tabs__button {
+    padding: 9px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.quotation-tabs__button.quotation-tabs__button--active {
+    border-bottom: 2px solid #26bad4;
+    color: #26bad4;
+}
+
+.quotation-tabs__content {
+    padding-top: 20px;
+}

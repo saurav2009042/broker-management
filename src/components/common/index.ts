@@ -1,5 +1,5 @@
-export { Chip } from './chip';
-export { Commission } from './commission';
-export { Contact } from './contact';
-export { Detail } from './detail';
-export { NameSearch } from './name-search';
+export { ChipField } from './ChipField';
+export { Commission } from './Commission';
+export { Contact } from './Contact';
+export { Field } from './Field';
+export { NameSearch } from './NameSearch';
